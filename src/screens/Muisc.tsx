@@ -19,7 +19,7 @@ export default function Musics({
   const tuEsOCentro = require("../../assets/images/tu_es_o_centro.jpg")
 
   return (
-    <View className="space-y-2 px-4 flex absolute bottom-24 w-full h-[465px]">
+    <View className="space-y-2 px-4 flex absolute h-[60%] bottom-20 w-full">
       <View className="flex flex-1 flex-row space-x-2">
         <Pressable
           onPress={() => handlePlaySound(sounds[0])}

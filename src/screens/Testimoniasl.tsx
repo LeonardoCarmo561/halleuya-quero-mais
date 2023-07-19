@@ -7,7 +7,7 @@ interface TestimonialsProps {
 
 export default function Testimonials({ handlePlaySound, sounds }: TestimonialsProps) {
   return (
-    <View className="space-y-2 px-4 flex absolute bottom-24 w-full h-[465px]">
+    <View className="space-y-2 px-4 flex absolute bottom-20 h-[60%] w-full">
       <View
         id="first-grid"
         className="flex space-x-2 flex-row flex-1"
