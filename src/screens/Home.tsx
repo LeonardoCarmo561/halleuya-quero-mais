@@ -63,38 +63,9 @@ function Home() {
         resizeMode="cover"
         className="flex justify-center items-center w-screen h-screen"
       >
-        <Pressable
-          onPress={() => (audioType === 0 ? setAudioType(1) : setAudioType(0))}
-          className="
-            flex
-            items-center
-            justify-center
-            bg-white
-            absolute
-            top-[135px]
-            left-4
-            rounded-full
-            h-[40px]
-            w-[40px]
-          "
-        >
-          <FontAwesome
-            size={31}
-            name={audioType === 0 ? "music" : "microphone"}
-            color="black"
-          />
-        </Pressable>
-        {audioType === 0 ? (
-          <Testimonials
-            handlePlaySound={handlePlaySound}
-            sounds={testimonials}
-          />
-        ) : (
-          <Musics handlePlaySound={handlePlaySound} sounds={musics} />
-        )}
+        <Testimonials handlePlaySound={handlePlaySound} sounds={testimonials} />
         <Pressable
           onPress={() => {
-            setAudioType(1);
             let position = Math.floor(Math.random() * musics.length);
             handlePlaySound(musics[position]);
           }}
